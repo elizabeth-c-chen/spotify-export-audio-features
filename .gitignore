@@ -1,0 +1,6 @@
+credentials.ini
+*.csv
+*.txt
+.vscode/
+.DS_Store
+
