@@ -11,7 +11,7 @@ spotify = tk.Spotify(token, chunked_on=True)
 # This is the primary function to be called. 
 def easyrun(username,limit):
     playlistids = get_all_playlist_ids(username,limit) # Get all playlist IDs
-    directorystring = 'CSV_Data_for' + username # Name of folder to create
+    directorystring = 'CSV_Data_for_' + username # Name of folder to create
     os.mkdir(directorystring) # Create the folder on OS
     for playlistid in playlistids:
         # This first part sets up the dictionary needed for storing the data subsets.
